@@ -153,6 +153,17 @@ if (_playerhealth < 0.10) then {
                 _healthcolor = "#590000";
                 _healthtext = parseText format["Dead</t>"];
 };};};};};};};};};};
+
+if (life_intox > 0.06) then {
+    _healthcolor = "#1AFF00";
+    _healthtext = parseText format["Buzzed"];
+};
+
+
+if (life_intox > 0.25) then {
+    _healthcolor = "#FF0000";
+    _healthtext = parseText format["Far Gone"];
+};
  
 if (_playerhunger > 90) then {
                 _hungercolor = "#00FF4C";

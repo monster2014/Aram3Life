@@ -32,6 +32,7 @@ lbClear _list;
 //Temp code, subjected to become one master config in future
 _clothes = switch (life_clothing_store) do
 {
+	case "ems": {[_selection] call life_fnc_clothing_ems;};
 	case "bruce": {[_selection] call life_fnc_clothing_bruce;};
 	case "brucecop": {[_selection] call life_fnc_clothing_bruce;};
 	case "cop": {[_selection] call life_fnc_clothing_cop;};

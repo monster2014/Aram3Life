@@ -67,41 +67,49 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 };
 
-//Side Specific actions.
-switch(playerSide) do {
-	case west: {
-		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
-		if(_className == "IVORY_PRIUS" && (_colorIndex == 12 OR _colorIndex == 13)) then {
-			[_vehicle,"cop_prius",true] spawn life_fnc_vehicleAnimate;
-		};
-		if(_className == "IVORY_REV") then {
-			[_vehicle,"cop_rev",true] spawn life_fnc_vehicleAnimate;
-		};
-		if(_className == "B_APC_Wheeled_01_cannon_F") then {
-			[_vehicle,"cop_apc",true] spawn life_fnc_vehicleAnimate;
-		};
-	};
-	
-	case civilian: {
-		if(_className == "B_Heli_Light_01_F") then {
-			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
-		};
-		if(_className == "IVORY_PRIUS" && _colorIndex == 11) then {
-			[_vehicle,"taxi_prius",true] spawn life_fnc_vehicleAnimate;
-		};
-		if(_className == "IVORY_PRIUS" && (_colorIndex == 7 OR _colorIndex == 8 OR _colorIndex == 9 OR _colorIndex == 10)) then {
-			[_vehicle,"sports_prius",true] spawn life_fnc_vehicleAnimate;
-		};
-	};
-	
-	case independent: {
-		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
-		if(_className == "IVORY_PRIUS") then {
-			[_vehicle,"med_prius",true] spawn life_fnc_vehicleAnimate;
-		};
+if(_className == "IVORY_REV") then {
+	if(_colorIndex in [11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]) then {
+		[_vehicle,"cop_rev",true] spawn life_fnc_vehicleAnimate;
 	};
 };
 
+if(_className == "IVORY_PRIUS") then {
+	if(_colorIndex in [14]) then {
+		[_vehicle,"med_prius",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [7,8,9,10,22,23,24,25]) then {
+		[_vehicle,"sports_prius",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [11,26]) then {
+		[_vehicle,"taxi_prius",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [12,13]) then {
+		[_vehicle,"cop_prius",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [15,16,17,18,19,20,21,22,23,24,25,26]) then {
+		[_vehicle,"uc_prius",true] spawn life_fnc_vehicleAnimate;
+	};
+};
+
+if(_className == "A3L_M3") then {
+	if(_colorIndex in [1,2,3,4,7,8,9,10,11,12,13,16,17]) then {
+		[_vehicle,"m3_glossy",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [5,14]) then {
+		[_vehicle,"m3_matte",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [6,15]) then {
+		[_vehicle,"m3_chrome",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [6,7,15,16]) then {
+		[_vehicle,"m3_spoiler",true] spawn life_fnc_vehicleAnimate;
+	};
+	if(_colorIndex in [9,10,11,12,13,14,15,16,17]) then {
+		[_vehicle,"m3_police",true] spawn life_fnc_vehicleAnimate;
+	};
+};
+		
+		
 _vehicle allowDamage true;
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.

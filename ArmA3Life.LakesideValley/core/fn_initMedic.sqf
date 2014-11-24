@@ -7,6 +7,9 @@
 	Initializes the medic..
 */
 
+// TFR Variables API
+tf_no_auto_long_range_radio = false; 
+
 
 private["_end"];
 player addRating 99999999;

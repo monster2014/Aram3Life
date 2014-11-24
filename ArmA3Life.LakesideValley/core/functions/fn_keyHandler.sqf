@@ -177,7 +177,7 @@ switch (_code) do
 			[] call fnc_opentablet;
 		};
 	};
-	
+	/*
 	//F Key
 	case 33:
 	{
@@ -209,6 +209,7 @@ switch (_code) do
 			};
 		};
 	};
+	*/
 	//U Key
 	case 22:
 	{

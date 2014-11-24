@@ -82,7 +82,7 @@ switch (_item) do
 	case "RoadBlockConc": {46};
 	case "RoadBlockRebel": {46};
 	case "BarGate": {23};
-	case "raxsrum" : {1};
+	case "Rax's Rum" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	
 

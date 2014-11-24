@@ -15,10 +15,10 @@ switch (_shop) do
 	case "dezzie_car":
 	{
 		_return = [
-			["IVORY_PRIUS",15000],
-			["IVORY_R8",130000],
-			["IVORY_R8SPYDER",135000],
-			["IVORY_REV",550000]
+			["IVORY_PRIUS",5000],
+			["IVORY_R8",80000],
+			["IVORY_R8SPYDER",85000],
+			["IVORY_REV",180000]
 		];
 	};
 	case "kart_shop":
@@ -189,11 +189,7 @@ switch (_shop) do
 			["S_Rangerover_Purple",20000],
 			["S_Rangerover_Grey",20000],
 			["S_Rangerover_Orange",20000],
-			["S_Rangerover_White",20000],
-			["A3L_EvoXWhite",70000],
-			["A3L_EvoXBlack",70000],
-			["A3L_EvoXRed",70000]
-			
+			["S_Rangerover_White",20000]
 		];
 	};
 	case "civ_truck":
@@ -229,18 +225,23 @@ switch (_shop) do
 		_return =
 		[
 			["IVORY_PRIUS",5000],
+			["IVORY_REV",100000],
+			
+			["A3L_TaurusFPBCSO",25000],
+			["A3L_TaurusFPBLBCSO",25000],
+			["A3L_CVPIFPBCSO",45000],
+			["A3L_CVPIFPBLBCSO",45000],
 			["A3L_GrandCaravanUC",25000],
 			["A3L_GrandCaravanUCBlack",25000],
-			["A3L_TaurusFPBLBPD",25000],
-			["A3L_TaurusFPBLBCSO",25000],
-			["A3L_TaurusFPBPD",25000],
-			["A3L_TaurusFPBPDGM",25000],
-			["A3L_TaurusFPBCSO",25000],
+			["A3L_SuburbanCSO",55000],
+			["A3L_EvoXFPBLBSO",70000],
+			
 			["A3L_TaurusUCBlack",25000],
 			["A3L_TaurusUCGrey",25000],
 			["A3L_TaurusUCWhite",25000],
 			["A3L_TaurusUCBlue",25000],
 			["A3L_TaurusUCRed",25000],
+			
 			["A3L_CVPIUC",50000],
 			["A3L_CVPIUCBlack",50000],
 			["A3L_CVPIUCWhite",50000],
@@ -248,25 +249,12 @@ switch (_shop) do
 			["A3L_CVPIUCRed",50000],
 			["A3L_CVPIUCPink",50000],
 			["A3L_CVPIUCBlue",50000],
-			["A3L_CVPIFPBPD",45000],
-			["A3L_CVPIFPBPD",45000],
-			["A3L_CVPIFPBCSO",45000],
-			["A3L_CVPIFPBFG",45000],
-			["A3L_CVPIFPBLBPD",45000],
-			["A3L_CVPIFPBLBCSO",45000],
-			["A3L_CVPIFPBLBFG",45000],
-			["A3L_CVPIFPBLBSP",45000],
-			["A3L_CVPIFPBLBSP2",45000],
-			["A3L_jailBus",50000],
-			["A3L_Suburban",55000],
-			["A3L_SuburbanCSO",55000],
-			["A3L_SuburbanFG",55000],
+			
 			["A3L_ChargerUC",60000],
 			["A3L_ChargerUCWhite",60000],
-			["A3L_EvoXFPBLBPD",70000],
-			["A3L_EvoXFPBLBSO",70000],
-			["IVORY_REV",100000],
-			["B_APC_Wheeled_01_cannon_F",1000000]
+			
+			["A3L_jailBus",50000]
+			
 
 		];
 	};
@@ -275,6 +263,7 @@ switch (_shop) do
 		_return =
 		[
 			["IVORY_T6A_1",300000],
+			["C_Heli_Light_01_civil_F",300000],
 			["ivory_b206",350000],
 			["ivory_b206_news",400000],
 			["IVORY_BELL512",500000],

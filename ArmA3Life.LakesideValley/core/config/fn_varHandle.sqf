@@ -93,8 +93,7 @@ switch (_mode) do
 			case "RoadBlockRebel": {"life_inv_RoadBlockRebel"};
 			case "BarGate": {"life_inv_BarGate"};
 			case "zoobeer": {"life_inv_zoobeer"}; // Duff Beer
-			case "raxsrum": {"life_inv_raxsrum"};
-
+			case "Rax's Rum": {"life_inv_raxsrum"};
 		};
 	};
 	
@@ -179,7 +178,7 @@ switch (_mode) do
 			case "life_inv_RoadBlockRebel": {"RoadBlockRebel"};
 			case "life_inv_BarGate": {"BarGate"};
 			case "life_inv_cigarette": {"cigarette"};
-			case "life_inv_raxsrum": {"raxsrum"};
+			case "life_inv_raxsrum": {"Rax's Rum"};
 		};
 	};
 };

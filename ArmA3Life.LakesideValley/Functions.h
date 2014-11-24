@@ -159,6 +159,7 @@ class Life_Client_Core
 		
 		//Clothing Store Configs
 		class clothing_cop {};
+		class clothing_ems {};
 		class clothing_bruce {};
 		class clothing_reb {};
 		class clothing_dive {};
@@ -372,6 +373,13 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class RoadBlockWood {};
+		class RoadBlockConc {};
+		class RoadBlockRebel {};
+		class RoadCone {};
+		class RoadConeStrip {};
+		class RoadConeB {};
+		class RoadConeStripB {};
 	};
 	
 	class Dialog_Controls

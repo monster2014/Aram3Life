@@ -87,7 +87,17 @@ switch (_filter) do
 			["santahat","Santa hat",120],
 			["A3L_Sombrero","Sombrero",120],
 			["turban","Turban",120],
-			["A3L_russianhat","Russianhat",120]
+			["A3L_russianhat","Russianhat",120],
+			["H_Cap_tan",nil,120],
+			["H_Cap_blk",nil,120],
+			["H_Cap_blk_CMMG",nil,120],
+			["H_Cap_brn_SPECOPS",nil,120],
+			["H_Cap_tan_specops_US",nil,120],
+			["H_Cap_khaki_specops_UK",nil,120],
+			["H_Cap_grn",nil,120],
+			["H_Cap_grn_BI",nil,120],
+			["H_Cap_blk_Raven",nil,120],
+			["H_Cap_blk_ION",nil,120]
 
 		];
 	};

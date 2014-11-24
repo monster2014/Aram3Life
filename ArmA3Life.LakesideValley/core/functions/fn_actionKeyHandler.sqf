@@ -7,7 +7,7 @@
 	Master action key handler, handles requests for picking up various items and
 	interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
 */
-private["_curTarget","_isWater"];
+private["_curTarget","_isWater", "_veh"];
 _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
@@ -36,13 +36,6 @@ life_action_inUse = true;
 	life_action_inUse = false;
 };
 
-//Check if it's a dead body.
-if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
-	//Hotfix code by ins0
-	if(((playerSide == blufor && {(call life_revive_cops)}) || playerSide == independent) && {"Medikit" in (items player)}) then {
-		[_curTarget] call life_fnc_revivePlayer;
-	};
-};
 
 if (typeOf _curTarget IN ["A3L_Wheat","A3L_Corn","A3L_Beans","A3L_Cannabis","A3L_Cotton","Ficus_Bush_1","A3L_Pumpkin","A3L_Sunflower","Oleander2"]) then {
 	// It's a plant!
@@ -95,6 +88,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 					if (_var) then {
 						if (count (attachedobjects player) > 0) exitwith {["You are already carrying a suitcase.",30,"red"] call A3L_Fnc_Msg;}; 
 						if (side player == west) then {
+								_veh = _this select 0;
 								["Bring this suitcase to the PD for a reward!",30,"blue"] call A3L_Fnc_Msg;
 								_curTarget setVariable ["pickup",false,true];
 								_curTarget attachto [player, [0.035,-.055,-0.22], "RightHandMiddle1"];
@@ -103,7 +97,6 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 								_id = player addAction ["Drop suitcase", {detach (_this select 3)},_curTarget];
 								
 								[_curTarget,_id] spawn {
-									_veh = _this select 0;
 									_id = _this select 1;
 									_suitcaseDeleted = false;
 									while {(_veh IN (attachedObjects player)) OR (_suitcaseDeleted)} do {

@@ -1,12 +1,12 @@
 /*
-	File: fn_roadcone.sqf
+	File: fn_roadconeB.sqf
 	Author:@F
 	Description:
-	Spawns a roadcone on the player waiting for placement.
+	Spawns a blinking roadcone on the player waiting for placement.
 */
 private["_pos","_cone1"];
 _pos = [0,0,0];
-_cone1 = "RoadCone_F" createVehicle _pos;
+_cone1 = "RoadCone_L_F" createVehicle _pos;
 _cone1 setVariable ["roadcone",[_cone1],true];
 life_roadcone=_cone1;
 _handle = [life_roadcone,"roadcone"] spawn life_fnc_disablecollisionwith; 

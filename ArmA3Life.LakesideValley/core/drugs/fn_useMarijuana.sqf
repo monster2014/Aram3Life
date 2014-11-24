@@ -9,16 +9,16 @@
 private["_smoke"];
 
 player setVariable["intoxicated",true,true];
-[[0,format["%1 is stoned.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 50],false] spawn life_fnc_MP;
+[[0,format["%1 is stoned.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 25],false] spawn life_fnc_MP;
 
-_smoke = "SmokeShellYellow " createVehicle position player;
+_smoke = "SmokeShellGreen" createVehicle position player;
 if (vehicle player != player) then 
 {
-	_smoke attachTo [vehicle player, [0,-1,0]];
+    _smoke attachTo [vehicle player, [-0.6,-1,0]];
 } 
 else 
 {
-	_smoke attachTo [player, [0,0.05,1.3]];
+    _smoke attachTo [player, [0,-0.1,1.5]];
 };
 
 closeDialog 0;

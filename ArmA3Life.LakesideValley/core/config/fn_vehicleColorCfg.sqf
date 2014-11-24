@@ -31,7 +31,19 @@ switch (_vehicle) do
 			[_path + "tex_taxi1_co.paa","civ"],
 			[_path + "tex_police1_co.paa","cop"],
 			[_path + "tex_police2_co.paa","cop"],
-			[_path + "tex_ems1_co.paa","med"]
+			[_path + "tex_ems1_co.paa","med"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.501961,1,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0.501961,1,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0,0.25098,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(0.541176,0,0,1.0,CO)","cop"],
+			["#(argb,8,8,3)color(1,0,1,1.0,CO)","cop"],
+			[_path + "tex_sports1_co.paa","cop"],
+			[_path + "tex_sports2_co.paa","cop"],
+			[_path + "tex_sports3_co.paa","cop"],
+			[_path + "tex_sports4_co.pa","cop"],
+			[_path + "tex_taxi1_co.paa","cop"]
 
 		];
 
@@ -111,14 +123,32 @@ switch (_vehicle) do
 			[_pathpolice + "2-5.paa","cop"],
 			[_pathpolice + "2-6.paa","cop"],
 			[_pathpolice + "4-1.paa","cop"],
-			[_pathpolice + "4-2.paa","cop"],
-			[_path + "BlackWhite.paa","civ"],
-			[_path + "BlueCamo.paa","civ"],
-			[_path + "Camo.paa","civ"],
-			[_path + "Clouds.paa","civ"],
-			[_path + "Fire.paa","civ"],
-			[_path + "Galaxy.paa","civ"],
-			[_path + "Splat.paa","civ"]
+			[_pathpolice + "4-2.paa","cop"]
+		];
+	};
+
+	case "A3L_M3": {
+		_path = "\A3L_M3\data\";
+		_ret =
+		[
+			["#(argb,8,8,3)color(0.969,0.969,0.969,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.043,0.039,0.063,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.008,0.333,0.545,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.592,0.055,0.082,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.969,0.969,0.969,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			["#(argb,8,8,3)color(0.831373,0.686275,0.215686,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			[_path + "skin01.paa","civ","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			[_path + "skin02.paa","civ","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			["#(argb,8,8,3)color(0.969,0.969,0.969,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.043,0.039,0.063,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.008,0.333,0.545,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.592,0.055,0.082,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			["#(argb,8,8,3)color(0.969,0.969,0.969,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			["#(argb,8,8,3)color(0.831373,0.686275,0.215686,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			[_path + "skin01.paa","cop","#(argb,8,8,3)color(0,0,0,0.45,CA)","#(argb,8,8,3)color(0,0,0,0.85,CA)","A3l_m3\data\bmw_m3_e92_wheel_diffuse_00.paa","#(argb,8,8,3)color(0,0,0,0.5,CA)","a3l_m3\data\bmw_m3_e92_misc_diffuse.paa"],
+			[_path + "skin02.paa","cop","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.99,CA)","#(argb,8,8,3)color(0,0,0,1.0,CO)"]
 		];
 	};
 	
@@ -258,7 +288,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","cop"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],
@@ -280,7 +310,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","cop"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],

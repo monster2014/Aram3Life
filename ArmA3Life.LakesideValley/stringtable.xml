@@ -2246,9 +2246,11 @@
 		</Key>
 		<Key ID="STR_pInAct_RemoveWeapons">
 			<Original>Confiscate Illegal Weapons</Original>
+			<English>Confiscate Illegal Weapons</English>
 		</Key>
 		<Key ID="STR_pInAct_TestIntox">
 			<Original>Test Intox Level</Original>
+			<English>Test Intox Level</English>
 		</Key>
 		<Key ID="STR_Cop_TicketNum">
 			<Original>You didn't enter actual number.</Original>

@@ -11,11 +11,11 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-player addUniform "A3L_Police_Uniform";
+player addUniform "A3L_Sheriff_Uniform";
 
 // Add shortrange radio
-player addItem "itemRadio"; 
-player assignItem "itemRadio";
+player addItem "tf_anprc152"; 
+player assignItem "tf_anprc152";
 
 player addWeapon "Taser_26";
 player addMagazine "26_cartridge";
@@ -34,5 +34,22 @@ player addItem "ItemWatch";
 player assignItem "ItemWatch";
 player addItem "ItemGPS";
 player assignItem "ItemGPS";
+
+
+player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; 
+player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; 
+player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; 
+player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; 
+player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; player addItem "cse_bandage_basic"; player assignItem "cse_bandage_basic"; 
+
+player addItem "Chemlight_red";
+player assignItem "Chemlight_red";
+player addItem "Chemlight_red";
+player assignItem "Chemlight_red";
+
+player addItem "Chemlight_yellow";
+player assignItem "Chemlight_yellow";
+player addItem "Chemlight_yellow";
+player assignItem "Chemlight_yellow";
 
 [] call life_fnc_saveGear;

@@ -20,8 +20,6 @@ switch (_className) do
 	case "S_Rangerover_Orange": {25};
 	case "S_Rangerover_White": {25};
 	
-	case "IVORY_PRIUS": {25};
-
 	case "S_Vantage_Red": {25};
 	case "S_Vantage_Blue": {25};
 	case "S_Vantage_Yellow": {25};
@@ -66,6 +64,10 @@ switch (_className) do
 	case "IVORY_REV": {25};
 	case "IVORY_R8SPYDER": {25};
 	case "IVORY_R8": {25};
+	case "IVORY_PRIUS": {25};
+	case "A3L_M3": {25};
+
+
 
 	case "A3L_GrandCaravanUC": {25};
 	case "A3L_GrandCaravanUCBlack": {25};

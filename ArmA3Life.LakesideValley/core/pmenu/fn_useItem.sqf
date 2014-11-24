@@ -38,6 +38,16 @@ switch (true) do
 		};
 	};
 
+	case (_item == "cigarette"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			titleText["You have consumed a Cigarette","PLAIN"];
+			player setFatigue 1;
+			[] spawn life_fnc_useCigarette;	
+		};
+	};
+
 	case (_item == "zoobeer"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -47,7 +57,7 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "raxsrum"):
+	case (_item == "Rax's Rum"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{

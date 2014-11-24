@@ -6,7 +6,8 @@
 	Initializes the civilian.
 */
 
-
+// TFR Variables API
+tf_no_auto_long_range_radio = true; 
 
 private["_spawnPos"];
 // civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],250];
